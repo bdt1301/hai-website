@@ -1,0 +1,267 @@
+:root {
+    --height-navbar: 60px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Common */
+.container {
+    width: 1300px;
+    max-width: calc(100% - 40px);
+    margin: auto;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 3rem;
+    padding: 10px 40px;
+    color: #fff;
+    font-weight: 700;
+    font-style: italic;
+    background-color: #ff5722;
+}
+
+.btn:hover {
+    background-color: #000;
+}
+
+.desc {
+    font-size: 2rem;
+}
+
+.note {
+    margin-top: 6px;
+    font-size: 1.4rem;
+}
+
+/* Header */
+.fixed-header .navbar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(255, 87, 34, 0.8);
+    width: 100%;
+    height: 60px;
+}
+
+.fixed-header .brand-name {
+    margin-left: 60px;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.fixed-header ul {
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+    gap: 8px;
+}
+
+.fixed-header li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.fixed-header li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    height: 100vh;
+}
+
+.hero .video-intro {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero .info-intro {
+    position: absolute;
+    bottom: 12%;
+    display: inline-block;
+    padding: 30px 50px 30px 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 36%;
+    word-wrap: break-word;
+    font-size: 2.2rem;
+    border-radius: 0 20px 20px 0;
+    z-index: 1;
+}
+
+.hero .info-intro b {
+    font-weight: 700;
+    font-size: 3.6rem;
+}
+
+/* Info */
+.info-section {
+    margin: 36px 0;
+}
+
+.info-section .container {
+    display: flex;
+}
+
+.info-section .column {
+    flex: 1 1 50%;
+}
+
+.info-section .slogan {
+    display: block;
+    padding: 5px 40px;
+    font-size: 6rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: #000;
+}
+
+.info-section .desc-column {
+    margin-left: 20px;
+    text-align: right;
+}
+
+.info-section .btn {
+    margin-top: 20px;
+}
+
+/* About self */
+.about-self {
+    margin: 40px 0;
+}
+
+.about-self .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-self .avatar img {
+    height: 400px;
+}
+
+.about-self .info {
+    margin-right: 20px;
+    text-align: right;
+}
+
+.about-self .info .name {
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: left;
+    background-color: #000;
+    color: #fff;
+}
+
+.about-self .info .btn {
+    margin-top: 20px;
+}
+
+/* Design show */
+.design-show {
+    padding-top: var(--height-navbar);
+    margin-top: calc(var(--height-navbar) * -1);
+}
+
+.design-show .product-list {
+    --product-item-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.design-show .product-item {
+    position: relative;
+    height: var(--product-item-height);
+    flex: 1 1 50%;
+}
+
+.design-show .product-item img {
+    width: 100%;
+    height: var(--product-item-height);
+    object-fit: cover;
+}
+
+.design-show .product-item:hover img {
+    opacity: 0.8;
+}
+
+.design-show .product-item:hover {
+    background-color: #000;
+}
+
+.design-show .product-item .name {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 4.2rem;
+    line-height: var(--product-item-height);
+    font-weight: 700;
+}
+
+.design-show .product-item:hover .name {
+    display: inline-block;
+}
+
+/* Footer */
+.footer {
+    padding: 36px 0;
+    background-color: #333;
+}
+
+.footer .social-list {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+
+.footer .social-item a {
+    padding: 10px 20px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer .social-item:hover a {
+    background-color: #fff;
+    color: #000;
+}
+
+.footer .copyright {
+    color: #fff;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 1.4rem;
+}
